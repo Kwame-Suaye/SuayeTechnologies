@@ -3,24 +3,23 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-
 def index():
 	return render_template('index.html')
 
 @app.route('/about')
-def index():
+def about():
        return render_template('about.html')
 
 @app.route('/projects')
-def index():
+def projects():
        return render_template('projects.html')
 
 @app.route('/gallery')
-def index():
+def gallery():
        return render_template('gallery.html')
 
 @app.route('/contacts')
-def index():
+def contacts():
        return render_template('contacts.html')
 
 
